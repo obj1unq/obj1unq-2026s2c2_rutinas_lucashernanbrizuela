@@ -17,6 +17,7 @@ Independientemente de cuál es la rutina, el cálculo para saber cuántas calor�
 - El descanso y la intensidad dependerán del caso según se detalla:
 
 
+
 ### Running
 
 - La intensidad es un valor configurable
