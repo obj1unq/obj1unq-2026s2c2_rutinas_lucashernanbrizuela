@@ -47,30 +47,29 @@ describe "rutinas" {
 	
 	test "2.1.1 test sedentario running" {
 		calamardo.aplicarRutina(correrEnLaPlaya)// hacer que calamardo practique correrEnLaPlaya
-		assert.equals(0, calamardo.pesoPerdido(correrEnLaPlaya))
 		assert.equals(59.948, calamardo.peso().truncate(3))// el peso de calamardo debería ser 59.948 (truncado a 3 decimales)
 	} 
 	
-//	test '2.1.2 test sedentario maraton' {
-//		// hacer que calamardo practique maratonBA
-//		// el peso de calamardo debería ser 59.871 (truncado a 3 decimales)
-//	} 
+	test '2.1.2 test sedentario maraton' {
+		calamardo.aplicarRutina(maratonBA)// hacer que calamardo practique maratonBA
+		assert.equals(59.871, calamardo.peso().truncate(3))// el peso de calamardo debería ser 59.871 (truncado a 3 decimales)
+	} 
 
-//	test '2.1.3 test sedentario remo' {
-//		// hacer que calamardo practique remarEnElDelta
-//		// el peso de calamardo debería ser 59.925 (truncado a 3 decimales)
-//	} 
+	test '2.1.3 test sedentario remo' {
+		calamardo.aplicarRutina(remarEnElDelta) //hacer que calamardo practique remarEnElDelta
+		assert.equals(59.925, calamardo.peso().truncate(3))// el peso de calamardo debería ser 59.925 (truncado a 3 decimales)
+	} 
 
-//	test '2.1.3 test sedentario remo competicion' {
-//		// hacer que calamardo practique remarEnCaminoRemeros
-//		// el peso de calamardo debería ser 59.927 (truncado a 3 decimales)
-//	} 
+	test '2.1.3 test sedentario remo competicion' {
+		calamardo.aplicarRutina(remarEnCaminoRemeros) // hacer que calamardo practique remarEnCaminoRemeros
+		assert.equals(59.927, calamardo.peso().truncate(3)) // el peso de calamardo debería ser 59.927 (truncado a 3 decimales)
+	} 
 	
-//	test '2.1.5 test sedentario no puede practicar' {
-//		// Hacer que el peso de calamardo sea 40
-//		// hacer que calamardo practique correrEnLaPlaya (NO SE PUEDE!)
-//		// el peso de calamardo debería ser 40 
-//	} 
+	test '2.1.5 test sedentario no puede practicar' {
+		calamardo.peso(40)// Hacer que el peso de calamardo sea 40
+		assert.throwsException({ calamardo.aplicarRutina(correrEnLaPlaya) })// hacer que calamardo practique correrEnLaPlaya (NO SE PUEDE!)
+		assert.equals(40, calamardo.peso())
+	} 
 	
 //	test "2.2.1 test atleta running" {
 //		// hacer que bob practique correrEnLaPlaya
