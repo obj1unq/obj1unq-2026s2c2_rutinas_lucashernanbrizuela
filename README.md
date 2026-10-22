@@ -17,6 +17,7 @@ Independientemente de cuál es la rutina, el cálculo para saber cuántas calor�
 - El descanso y la intensidad dependerán del caso según se detalla:
 
 
+
 ### Running
 
 - La intensidad es un valor configurable
@@ -56,7 +57,7 @@ ojo, si ese valor es menor a 2, entonces es 2 (Tip: usar el método max de los n
 - Al practicarse por 5 minutos quemará `100 * (5 - 2) * 1.7 = 510`
 - Al practicarse por 90 minutos quemará `100 * (90 - ((90/5) - 3) ) * 1.7 = 12750`
 
-
+ 
 ## 2. Personas
 
 Las personas siguen distintas rutinas de ejercicio, y el tiempo que dedican a cada una depende del arquetipo de persona que se considere. Además, existen reglas para que la persona pueda hacer una rutina, y no siempre es posible.
@@ -98,16 +99,17 @@ Mientras que `calorias-consumidas` se resolvió en el punto anterior, la segunda
 
 Las personas atletas tienen una variación en su fórmula para
 calcular el peso al practicar una rutina, porque siempre pierden
-un kilo menos que el resto de las personas 
+un kilo menos que el resto de las personas  
 
-- Formula de peso que se pierde al hacer una rutina: ` (calorias que baja la rutina / kilosPorCaloría) - 1 ` 
-*Nota:* La primera parte es igual que la fórmula para todas las personas
+- Formula de peso que se pierde al hacer una rutina: 
+` (calorias que baja la rutina / kilosPorCaloría) - 1 ` 
+*Nota:* La primera parte es igual que la fórmula para todas las personas 
 
-- La cantidad de calorias-por-kilo de las personas atletas es 8000
+- La cantidad de calorias-por-kilo de las personas atletas es 8000 
 
-- El tiempo que ejercita una rutina es siempre 90.
+- El tiempo que ejercita una rutina es siempre 90. 
 
-- Solo realizan una rutina si las calorías que consumiría al realizarla es mayor a 10000
+- Solo realizan una rutina si las calorías que consumiría al realizarla es mayor a 10000 
 
 **Ejemplos**:
 
@@ -130,8 +132,7 @@ Se pide:
 - El mejor predio de un club para una persona: Es el predio que más calorías le 
 haría quemar a esa persona si ésta practicara todas las rutinas una vez.
 
-- Los predios tranquis de un club  para una persona: Es el conjunto de predios que tienen al menos
-una rutina que le hace gastar menos de 500 calorias a la persona
+- Los predios tranquis de un club  para una persona: Es el conjunto de predios que tienen al menos una rutina que le hace gastar menos de 500 calorias a la persona
 
 - Las rutinas más exigentes del club para una persona: Es el conjunto
 formado por la rutina más exigente de cada predio para esa persona. La rutina más 
